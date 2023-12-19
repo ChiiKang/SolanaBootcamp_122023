@@ -81,6 +81,7 @@ export async function sayHello(
   connection: Connection,
   payer: Keypair
 ): Promise<void> {
+  console.log(`Program ID: ${programId.toString()}`);
   // Creates transaction instruction object to be passed to transaction
   const transactionInstruction = new TransactionInstruction({
     keys: [], // Keys unnecessary to simply log output
